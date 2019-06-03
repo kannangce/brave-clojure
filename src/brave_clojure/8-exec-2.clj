@@ -9,7 +9,8 @@
    `(let [val# (my-or ~expr)]
       (if val# val# (my-or ~@other-exprs)))))
       
-      
+;;;;;;;;;;;;;;;;;
+; Tests
 (my-or
   (do (println "(= 1 2)") (= 1 2))
   (do (println "(= 2 3)") (= 2 3))
